@@ -1,0 +1,55 @@
+[
+  {
+    "id": "fashion_mnist",
+    "tags": [
+      "annotations_creators:expert-generated",
+      "licenses:mit",
+      "size_categories:10K<n<100K",
+      "source_datasets:original",
+      "task_categories:other",
+      "task_ids:other-other-image-classification"
+    ],
+    "citation": "@article{DBLP:journals/corr/abs-1708-07747,\n  author    = {Han Xiao and\n               Kashif Rasul and\n               Roland Vollgraf},\n  title     = {Fashion-MNIST: a Novel Image Dataset for Benchmarking Machine Learning\n               Algorithms},\n  journal   = {CoRR},\n  volume    = {abs/1708.07747},\n  year      = {2017},\n  url       = {http://arxiv.org/abs/1708.07747},\n  archivePrefix = {arXiv},\n  eprint    = {1708.07747},\n  timestamp = {Mon, 13 Aug 2018 16:47:27 +0200},\n  biburl    = {https://dblp.org/rec/bib/journals/corr/abs-1708-07747},\n  bibsource = {dblp computer science bibliography, https://dblp.org}\n}",
+    "description": "Fashion-MNIST is a dataset of Zalando's article images—consisting of a training set of\n60,000 examples and a test set of 10,000 examples. Each example is a 28x28 grayscale image,\nassociated with a label from 10 classes. We intend Fashion-MNIST to serve as a direct drop-in\nreplacement for the original MNIST dataset for benchmarking machine learning algorithms.\nIt shares the same image size and structure of training and testing splits.",
+    "paperswithcode_id": "fashion-mnist",
+    "key": ""
+  },
+{
+    "id": "mnist",
+    "tags": [
+      "annotations_creators:experts",
+      "language_creators:found",
+      "licenses:MIT",
+      "size_categories:10K<n<100K",
+      "source_datasets:extended|other-nist",
+      "task_categories:other",
+      "task_ids:other-other-image-classification"
+    ],
+    "citation": "@article{lecun2010mnist,\n  title={MNIST handwritten digit database},\n  author={LeCun, Yann and Cortes, Corinna and Burges, CJ},\n  journal={ATT Labs [Online]. Available: http://yann.lecun.com/exdb/mnist},\n  volume={2},\n  year={2010}\n}",
+    "description": "The MNIST dataset consists of 70,000 28x28 black-and-white images in 10 classes (one for each digits), with 7,000\nimages per class. There are 60,000 training images and 10,000 test images.",
+    "paperswithcode_id": "mnist",
+    "key": ""
+  },
+{
+    "id": "fquad",
+    "tags": [
+      "annotations_creators:crowdsourced",
+      "extended:original",
+      "language_creators:crowdsourced",
+      "language_creators:found",
+      "languages:fr",
+      "licenses:cc-by-nc-sa-3.0",
+      "multilinguality:monolingual",
+      "size_categories:1K<n<10K",
+      "source_datasets:original",
+      "task_categories:question-answering",
+      "task_categories:text-retrieval",
+      "task_ids:extractive-qa",
+      "task_ids:closed-domain-qa"
+    ],
+    "citation": "@ARTICLE{2020arXiv200206071\n       author = {Martin, d'Hoffschmidt and Maxime, Vidal and\n         Wacim, Belblidia and Tom, Brendlé},\n        title = \"{FQuAD: French Question Answering Dataset}\",\n      journal = {arXiv e-prints},\n     keywords = {Computer Science - Computation and Language},\n         year = \"2020\",\n        month = \"Feb\",\n          eid = {arXiv:2002.06071},\n        pages = {arXiv:2002.06071},\narchivePrefix = {arXiv},\n       eprint = {2002.06071},\n primaryClass = {cs.CL}\n}",
+    "description": "FQuAD: French Question Answering Dataset\nWe introduce FQuAD, a native French Question Answering Dataset. FQuAD contains 25,000+ question and answer pairs.\nFinetuning CamemBERT on FQuAD yields a F1 score of 88% and an exact match of 77.9%.",
+    "paperswithcode_id": "fquad",
+    "key": ""
+  }
+]
