@@ -38,6 +38,6 @@ if __name__ == "__main__":
 
     if args.dataDir is None:
         raise ValueError("Data directory is not specified (did you use --data-dir=PATH?)")
-    print(args.dataDir)
+    #print(args.dataDir)
     os.makedirs(args.dataDir, exist_ok=True)
     download(args.dataDir)
