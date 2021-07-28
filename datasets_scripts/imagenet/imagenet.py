@@ -11,5 +11,5 @@ def download():
     """
 
     if manual_download:
-        assert manual_download, "The {} dataset requires manual download due to login requirement. " \
-                                "\n Please follow the instructions: {}".format(instructions)
+        print("The {} dataset requires manual download due to login requirement. " \
+                                "\n Please follow the instructions: {}".format(instructions))
