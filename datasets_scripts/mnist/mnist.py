@@ -11,6 +11,10 @@ import tensorflow as tf
 from tensorflow.keras.utils import get_file
 
 def download():
+    
+    parser = argparse.ArgumentParser()
+    parser.add_argument('--data_dir', '--dataDir', type=str, default=None, help="Path to a dataset file.")
+    args = parser.parse_args(args=task_args)
 
     if args.dataDir is None:
         raise ValueError("Data directory is not specified (did you use --data-dir=PATH?)")
