@@ -10,17 +10,10 @@ import numpy as np
 import tensorflow as tf
 from tensorflow.keras.utils import get_file
 
-def download():
-    
-    parser = argparse.ArgumentParser()
-    parser.add_argument('--data_dir', '--dataDir', type=str, default=None, help="Path to a dataset file.")
-    args = parser.parse_args(args=task_args)
 
-    if args.dataDir is None:
-        raise ValueError("Data directory is not specified (did you use --data-dir=PATH?)")
-    os.makedirs(args.dataDir, exist_ok=True)
+def download(dataDir):
 
-    data_file = os.path.join(args.dataDir, 'mnist.npz')
+    data_file = os.path.join(dataDir, 'mnist.npz')
     if os.path.exists(data_file):
         print("MNIST data has already been download (file exists: %s)", data_file)
         return
@@ -38,5 +31,13 @@ def download():
     print("The downlaod task has been completed.")
 
 
-if __name__=="__main__":
-    download()
+if __name__ == "__main__":
+    parser = argparse.ArgumentParser()
+    parser.add_argument('--dataDir', '--dataDir', type=str, default=None, help="Path to a dataset file.")
+    args = parser.parse_args()
+
+    if args.dataDir is None:
+        raise ValueError("Data directory is not specified (did you use --data-dir=PATH?)")
+    print(args.dataDir)
+    os.makedirs(args.dataDir, exist_ok=True)
+    download(args.dataDir)
