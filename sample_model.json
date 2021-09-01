@@ -1,8 +1,8 @@
-{
+[
   {"id":"0",
    "name":"resnet"
   },
   {"id":"1",
    "name":"bert"
   }
-}
+]
